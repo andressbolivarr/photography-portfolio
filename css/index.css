@@ -5,6 +5,7 @@
 }
 body{
     background-color: #EFECE8;
+    height: 360vh;
 }
 /*----------------- FLEX ------------ */
 .flex{
@@ -202,6 +203,7 @@ footer{
     width: 100%;
     height: 20vh;
     color: white;
+    position: absolute;
 }
 .footer-wrapper{
     width: 90%;
@@ -232,6 +234,76 @@ font-weight: 700;
 line-height: 20px;
 letter-spacing: 0.01em;
 text-align: justified;
-
 }
+/* ---------- Responsive --------- */
+
+@media only screen and (max-width: 420px) {
+    /* body {
+      background-color: lightblue;
+    } */
+    .main-right-content{
+        overflow: hidden;
+    }
+    .unlisted{
+        flex-direction: column;
+    }
+    main{
+        height: auto;
+        flex-direction: column;
+    }
+    .main-right-content, .main-left-content{
+        width: 85%;
+        height: 55vh;
+    }
+    h1{
+        font-size: 6rem;
+    }
+    .near{
+        position: relative;
+        top: -7rem;
+    }
+    section{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 2rem;
+    }
+    .section-left-content, .section-right-content{
+        width: 85%;
+    }
+    .title-tag{
+        margin: 3rem auto;
+        position: relative;
+    }
+    .thick{
+        top:23px;
+    }
+    h2{
+        font-size:3rem;
+    }
+    .carousel{
+        width: 85%;
+        margin: 1rem auto;
+
+    }
+    footer{
+        height: 50vh;
+        position: absolute;
+    }
+    .footer-wrapper{
+        height: auto;
+    }
+    .footer-wrapper-content{
+        flex-direction: column;
+    }
+    .footer-content-img{
+        width: 100%;
+    }
+    .footer-content-rectangle{
+        margin: 1rem 0;
+        width: 80%;
+    }
+  }
 
