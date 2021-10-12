@@ -283,6 +283,7 @@ text-align: justified;
     }
     .unlisted{
         flex-direction: column;
+        text-align: left;
     }
     main{
         height: auto;
